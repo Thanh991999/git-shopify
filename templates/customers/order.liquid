@@ -211,9 +211,9 @@
             </td>
             <td headers="RowSubtotal" role="cell" data-label="{{ 'customer.order.subtotal' | t }}">{{ order.line_items_subtotal_price | money }}</td>
           </tr>
-          {%- if order.cart_level_discount_applications != blank -%}
+          
             <tr role="row">
-              {%- for discount_application in order.cart_level_discount_applications -%}
+
                 <td id="RowDiscount" role="rowheader" scope="row" colspan="4">
                   {{ 'customer.order.discount' | t }}
                   <span class="cart-discount">
@@ -234,9 +234,9 @@
                     </span>
                   </div>
                 </td>
-              {%- endfor -%}
+
             </tr>
-          {%- endif -%}
+
           {%- for shipping_method in order.shipping_methods -%}
             <tr role="row">
               <td id="RowShipping" role="rowheader" scope="row" colspan="4">{{ 'customer.order.shipping' | t }} ({{ shipping_method.title }})</td>
