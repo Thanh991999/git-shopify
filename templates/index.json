@@ -81,7 +81,7 @@
       "settings": {
         "title": "Featured products",
         "heading_size": "h2",
-        "description": "",
+        "description": "<p>thanh<\/p><p>thanh<\/p><p>thanh<\/p>",
         "show_description": false,
         "description_style": "body",
         "collection": "all",
